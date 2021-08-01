@@ -1,0 +1,52 @@
+"Source:","/home/balagi/modellbahn/kicad/sboxnet-modul/sboxnet-modul.sch"
+"Date:","Tue 30 Mar 2021 16:18:50 CEST"
+"Tool:","Eeschema 5.1.6-c6e7f7d~87~ubuntu18.04.1"
+"Generator:","/usr/share/kicad/plugins/bom_csv_grouped_by_value_with_fp.py"
+"Component Count:","35"
+"Ref","Qnty","Value","Cmp name","Footprint","Description","Vendor"
+"C1, C4, C5, C6, C10, ","5","100n","C","Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder","Unpolarized capacitor",""
+"C2, ","1","10u","CP","Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder","Polarized capacitor",""
+"C3, ","1","10u","CP","Capacitor_SMD:C_1206_3216Metric","Polarized capacitor",""
+"C7, ","1","1u","C","Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder","Unpolarized capacitor",""
+"C8, C9, ","2","15p","C","Capacitor_SMD:C_1206_3216Metric_Pad1.42x1.75mm_HandSolder","Unpolarized capacitor",""
+"D1, ","1","SKL13B","D_Schottky","Diode_SMD:D_SMB_Handsoldering","Schottky diode",""
+"D2, D3, D4, D5, ","4","LED","LED","LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder","Light emitting diode",""
+"J1, ","1","Conn_01x03","Conn_01x03","Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical","Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",""
+"J2, ","1","Conn_02x03_Odd_Even","Conn_02x03_Odd_Even","sboxnet:wannenstecker_gerade_6pin","Generic connector, double row, 02x03, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)",""
+"J3, ","1","Conn_01x04_Female","Conn_01x04_Female","Connector_PinHeader_2.54mm:PinHeader_1x04_P2.54mm_Vertical","Generic connector, single row, 01x04, script generated (kicad-library-utils/schlib/autogen/connector/)",""
+"J4, J5, ","2","8P8C","8P8C","sboxnet:8p8c-mebp","RJ connector, 8P8C (8 positions 8 connected), RJ31/RJ32/RJ33/RJ34/RJ35/RJ41/RJ45/RJ49/RJ61",""
+"J6, ","1","sboxnet-buchse_2x17","sboxnet-buchse_02x17","sboxnet:sboxnet-buchse-2x17","",""
+"L1, ","1","Ferrit 60Ohm","L","Inductor_SMD:L_1206_3216Metric_Pad1.42x1.75mm_HandSolder","Inductor",""
+"R1, R3, R4, R7, ","4","470","R","Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder","Resistor",""
+"R2, ","1","0","R","Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder","Resistor",""
+"R5, ","1","1k","R","Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder","Resistor",""
+"R6, ","1","10k","R","Resistor_SMD:R_1206_3216Metric_Pad1.42x1.75mm_HandSolder","Resistor",""
+"SW1, ","1","SW_Push","SW_Push","sboxnet:JTP-1130","Push button switch, generic, two pins",""
+"U1, ","1","MCP1703A-3302_SOT223","MCP1703A-3302_SOT223","Package_TO_SOT_SMD:SOT-223-3_TabPin2","Low Quiescent Current LDO Regulator, 3.3V, 250mA, Vin<=16V, SOT-223",""
+"U2, ","1","MCP1703A-5002_SOT223","MCP1703A-5002_SOT223","Package_TO_SOT_SMD:SOT-223-3_TabPin2","Low Quiescent Current LDO Regulator, 5.0V, 250mA, Vin<=16V, SOT-223",""
+"U3, ","1","SN65HVD230","SN65HVD230","Package_SO:SOIC-8_3.9x4.9mm_P1.27mm","CAN Bus Transceivers, 3.3V, 1Mbps, Low-Power capabilities, SOIC-8",""
+"U4, ","1","ATxmega128A4U-AU","ATxmega128A4U-AU","Package_QFP:TQFP-44_10x10mm_P0.8mm","32MHz, 128kB Flash, 8kB Boot, 8kB SRAM, 2kB EEPROM, JTAG, USB, TQFP-44",""
+"Y1, ","1","16MHz","Crystal_Small","Crystal:Crystal_HC49-U_Vertical","Two pin crystal, small symbol",""
+
+100n 5 300
+10u  2 120
+1u   1 60
+15p  2 120
+SKL13B 1 60
+LED gr 1 60
+LED rt 1 60
+LED bl 1 60
+LED or 1 60
+8P8C 2 120
+2x17 1 60
+Ferrit 60Ohm 1 60
+470 4 240
+0 1 60
+1k 1 60
+10k 1 60
+MCP1703A-3302_SOT223 1 60
+MCP1703A-5002_SOT223 1 60
+SN65HVD230 1 60
+ATxmega128A4U-AU 1 60
+
+16MHz 1 60

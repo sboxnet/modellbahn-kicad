@@ -1,0 +1,75 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 8P8C
+D RJ connector, 8P8C (8 positions 8 connected), RJ31/RJ32/RJ33/RJ34/RJ35/RJ41/RJ45/RJ49/RJ61
+K 8P8C RJ female connector
+F ~
+$ENDCMP
+#
+$CMP RJ31
+D RJ connector, 8P8C (8 positions 8 connected)
+K 8P8C RJ female connector
+F ~
+$ENDCMP
+#
+$CMP RJ32
+D RJ connector, 8P8C (8 positions 8 connected)
+K 8P8C RJ female connector
+F ~
+$ENDCMP
+#
+$CMP RJ33
+D RJ connector, 8P8C (8 positions 8 connected)
+K 8P8C RJ female connector
+F ~
+$ENDCMP
+#
+$CMP RJ34
+D RJ connector, 8P8C (8 positions 8 connected)
+K 8P8C RJ female connector
+F ~
+$ENDCMP
+#
+$CMP RJ35
+D RJ connector, 8P8C (8 positions 8 connected)
+K 8P8C RJ female connector
+F ~
+$ENDCMP
+#
+$CMP RJ41
+D RJ connector, 8P8C (8 positions 8 connected)
+K 8P8C RJ female connector
+F ~
+$ENDCMP
+#
+$CMP RJ45
+D RJ connector, 8P8C (8 positions 8 connected)
+K 8P8C RJ female connector
+F ~
+$ENDCMP
+#
+$CMP RJ49
+D RJ connector, 8P8C (8 positions 8 connected)
+K 8P8C RJ female connector
+F ~
+$ENDCMP
+#
+$CMP RJ61
+D RJ connector, 8P8C (8 positions 8 connected)
+K 8P8C RJ female connector
+F ~
+$ENDCMP
+#
+$CMP R_Network13
+D 13 resistor network, star topology, bussed resistors, small symbol
+K R network star-topology
+F http://www.vishay.com/docs/31509/csc.pdf
+$ENDCMP
+#
+$CMP cliff_FCR681465P_audiobuchse
+D Audio Jack, 2 Poles (Mono / TS)
+K audio jack receptacle mono phone headphone TS connector
+F ~
+$ENDCMP
+#
+#End Doc Library

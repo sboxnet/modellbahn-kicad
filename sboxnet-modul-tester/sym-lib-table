@@ -1,0 +1,4 @@
+(sym_lib_table
+  (lib (name sboxnet)(type Legacy)(uri C:/Users/balagi/Documents/modellbahn/kicad/lib/sboxnet.lib)(options "")(descr ""))
+  (lib (name sboxnet-modul-tester-rescue)(type Legacy)(uri ${KIPRJMOD}/sboxnet-modul-tester-rescue.lib)(options "")(descr ""))
+)
