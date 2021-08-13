@@ -3,7 +3,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title "sboxnet weichenservo"
 Date "31.08.2019"
 Rev "1"
@@ -939,22 +939,6 @@ F 3 "" H 5050 7000 50  0001 C CNN
 	1    5050 7000
 	1    0    0    -1  
 $EndComp
-Text GLabel 4200 2600 3    50   Input ~ 0
-PD7
-Text GLabel 4300 2600 3    50   Input ~ 0
-PD6
-Text GLabel 4400 2600 3    50   Input ~ 0
-PD5
-Text GLabel 4500 2600 3    50   Input ~ 0
-PD4
-Text GLabel 4600 2600 3    50   Input ~ 0
-PD3
-Text GLabel 4700 2600 3    50   Input ~ 0
-PD2
-Text GLabel 4800 2600 3    50   Input ~ 0
-PD1
-Text GLabel 4900 2600 3    50   Input ~ 0
-PD0
 Text GLabel 4230 5735 2    50   Input ~ 0
 PA4
 Text GLabel 3730 5735 0    50   Input ~ 0
@@ -1201,5 +1185,89 @@ F 2 "Resistor_THT:R_Array_SIP14" V 7775 3450 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7000 3450 50  0001 C CNN
 	1    7000 3450
 	0    1    1    0   
+$EndComp
+Text GLabel 4900 2600 3    50   Input ~ 0
+PD0
+Text GLabel 4800 2600 3    50   Input ~ 0
+PD1
+Text GLabel 4700 2600 3    50   Input ~ 0
+PD2
+Text GLabel 4600 2600 3    50   Input ~ 0
+PD3
+Text GLabel 4500 2600 3    50   Input ~ 0
+PD4
+Text GLabel 4400 2600 3    50   Input ~ 0
+PD5
+Text GLabel 4300 2600 3    50   Input ~ 0
+PD6
+Text GLabel 4200 2600 3    50   Input ~ 0
+PD7
+Text GLabel 3700 3800 3    50   Input ~ 0
+PD0
+Text GLabel 3600 3800 3    50   Input ~ 0
+PD1
+Text GLabel 3500 3800 3    50   Input ~ 0
+PD2
+Text GLabel 3400 3800 3    50   Input ~ 0
+PD3
+Text GLabel 3300 3800 3    50   Input ~ 0
+PD4
+Text GLabel 3200 3800 3    50   Input ~ 0
+PD5
+Text GLabel 3100 3800 3    50   Input ~ 0
+PD6
+Text GLabel 3000 3800 3    50   Input ~ 0
+PD7
+$Sheet
+S 3270 6760 500  320 
+U 61281C62
+F0 "weichen-servo-ctrl" 50
+F1 "weichen-servo-ctrl.sch" 50
+$EndSheet
+Text Notes 890  6930 0    50   ~ 0
+Pin 1 GND\nPin 2 KEY_SEL\nPin 3 KEY_ACT\nPin 4 KEY_UP\nPin 5 KEY_DOWN\nPin 13 PD7\nPin 14 PD6\nPin 15 PD5\nPin 16 PD4\nPin 17 PD3\nPin 14 PD2\nPin 15 PD1\nPin 16 PD0
+Text GLabel 2270 7370 2    50   Input ~ 0
+PD0
+Text GLabel 2320 7320 2    50   Input ~ 0
+PD1
+Text GLabel 2330 7230 2    50   Input ~ 0
+PD2
+Text GLabel 2310 7130 2    50   Input ~ 0
+PD3
+Text GLabel 2740 7290 2    50   Input ~ 0
+PD4
+Text GLabel 2990 7060 2    50   Input ~ 0
+PD5
+Text GLabel 2960 6940 2    50   Input ~ 0
+PD6
+Text GLabel 2500 6630 2    50   Input ~ 0
+PD7
+$Comp
+L power:GND #PWR?
+U 1 1 612C5102
+P 1770 6670
+F 0 "#PWR?" H 1770 6420 50  0001 C CNN
+F 1 "GND" V 1775 6542 50  0000 R CNN
+F 2 "" H 1770 6670 50  0001 C CNN
+F 3 "" H 1770 6670 50  0001 C CNN
+	1    1770 6670
+	0    1    1    0   
+$EndComp
+Text GLabel 1770 6770 0    50   Input ~ 0
+PA0
+Text GLabel 1770 6870 0    50   Input ~ 0
+PA1
+Text GLabel 1770 6970 0    50   Input ~ 0
+PA2
+$Comp
+L Connector_Generic:Conn_02x08_Top_Bottom J?
+U 1 1 612D070E
+P 1970 6970
+F 0 "J?" H 2020 7487 50  0000 C CNN
+F 1 "Conn_02x08_Top_Bottom" H 2020 7396 50  0000 C CNN
+F 2 "" H 1970 6970 50  0001 C CNN
+F 3 "~" H 1970 6970 50  0001 C CNN
+	1    1970 6970
+	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
