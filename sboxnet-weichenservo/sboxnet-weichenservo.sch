@@ -88,13 +88,13 @@ $EndComp
 Text Notes 3450 4490 0    50   ~ 0
 DCC_B
 Text Notes 2340 4510 0    50   ~ 0
-Up
-Text Notes 2305 4930 0    50   ~ 0
-Dn
+UP
+Text Notes 2205 4920 0    50   ~ 0
+DOWN
 Text Notes 2260 5300 0    50   ~ 0
-Move
-Text Notes 2360 5610 0    50   ~ 0
-Sel
+ACT
+Text Notes 2295 5605 0    50   ~ 0
+SEL
 Text GLabel 3700 5000 0    50   Input ~ 0
 PC7
 Text GLabel 3700 5100 0    50   Input ~ 0
@@ -126,7 +126,7 @@ U 1 1 5D7539D6
 P 8220 5220
 F 0 "RN3" V 7603 5220 50  0000 C CNN
 F 1 "4816P-1-101 8x 100" V 7694 5220 50  0000 C CNN
-F 2 "Package_SO:SOIC-16W-12_7.5x10.3mm_P1.27mm" V 8695 5220 50  0001 C CNN
+F 2 "Package_SO:SOIC-16W_5.3x10.2mm_P1.27mm" V 8695 5220 50  0001 C CNN
 F 3 "~" H 8220 5220 50  0001 C CNN
 	1    8220 5220
 	0    1    1    0   
@@ -344,36 +344,6 @@ PD7
 NoConn ~ 4200 4500
 NoConn ~ 3700 4500
 $Comp
-L LED:HDSP-4830_2 BAR1
-U 1 1 5D746743
-P 4600 2400
-F 0 "BAR1" V 4646 1770 50  0000 R CNN
-F 1 "HDSP-4830_2 10x LED" V 4555 1770 50  0000 R CNN
-F 2 "Display:HDSP-4830" H 4600 1600 50  0001 C CNN
-F 3 "https://docs.broadcom.com/docs/AV02-1798EN" H 2600 2600 50  0001 C CNN
-	1    4600 2400
-	0    -1   -1   0   
-$EndComp
-NoConn ~ 5100 2600
-NoConn ~ 5000 2200
-NoConn ~ 5100 2200
-Wire Wire Line
-	4200 2080 4200 2200
-Wire Wire Line
-	4300 2200 4300 2080
-Wire Wire Line
-	4400 2200 4400 2080
-Wire Wire Line
-	4500 2200 4500 2080
-Wire Wire Line
-	4600 2200 4600 2080
-Wire Wire Line
-	4700 2200 4700 2080
-Wire Wire Line
-	4800 2200 4800 2080
-Wire Wire Line
-	4900 2200 4900 2080
-$Comp
 L power:GND #PWR0103
 U 1 1 5D765420
 P 4245 3650
@@ -383,17 +353,6 @@ F 2 "" H 4245 3650 50  0001 C CNN
 F 3 "" H 4245 3650 50  0001 C CNN
 	1    4245 3650
 	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR0104
-U 1 1 5D766965
-P 4200 1680
-F 0 "#PWR0104" H 4200 1430 50  0001 C CNN
-F 1 "GND" H 4205 1507 50  0000 C CNN
-F 2 "" H 4200 1680 50  0001 C CNN
-F 3 "" H 4200 1680 50  0001 C CNN
-	1    4200 1680
-	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0108
@@ -468,7 +427,6 @@ Wire Wire Line
 Wire Wire Line
 	9360 3960 9230 3960
 Connection ~ 9360 4200
-NoConn ~ 5000 2600
 $Comp
 L power:GND #PWR0102
 U 1 1 5D796CEA
@@ -511,21 +469,21 @@ Wire Wire Line
 	6430 4920 7020 4920
 Wire Wire Line
 	6430 4820 7020 4820
-Text GLabel 6800 3550 0    50   Input ~ 0
-PC7
-Text GLabel 6800 3450 0    50   Input ~ 0
-PC6
-Text GLabel 6800 3350 0    50   Input ~ 0
-PC5
-Text GLabel 6800 3250 0    50   Input ~ 0
-PC4
-Text GLabel 6800 3150 0    50   Input ~ 0
-PC3
-Text GLabel 6800 3050 0    50   Input ~ 0
-PC2
-Text GLabel 6800 2950 0    50   Input ~ 0
-PC1
 Text GLabel 6800 2850 0    50   Input ~ 0
+PC7
+Text GLabel 6800 2950 0    50   Input ~ 0
+PC6
+Text GLabel 6800 3050 0    50   Input ~ 0
+PC5
+Text GLabel 6800 3150 0    50   Input ~ 0
+PC4
+Text GLabel 6800 3250 0    50   Input ~ 0
+PC3
+Text GLabel 6800 3350 0    50   Input ~ 0
+PC2
+Text GLabel 6800 3450 0    50   Input ~ 0
+PC1
+Text GLabel 6800 3550 0    50   Input ~ 0
 PC0
 $Comp
 L power:+5V #PWR010
@@ -620,17 +578,6 @@ Wire Wire Line
 	7900 1950 8100 1950
 Text GLabel 6200 2050 0    50   Input ~ 0
 PA7
-$Comp
-L 74xx_IEEE:74151 U3
-U 1 1 5D6CF1DE
-P 7350 1700
-F 0 "U3" H 7350 809 50  0000 C CNN
-F 1 "74HCT151" H 7350 900 50  0000 C CNN
-F 2 "Package_SO:SOIC-16_4.55x10.3mm_P1.27mm" H 7350 1700 50  0001 C CNN
-F 3 "" H 7350 1700 50  0001 C CNN
-	1    7350 1700
-	-1   0    0    1   
-$EndComp
 Wire Wire Line
 	7900 1800 8100 1800
 Wire Wire Line
@@ -639,14 +586,6 @@ Wire Wire Line
 	7900 1600 8100 1600
 Wire Wire Line
 	7900 1500 8100 1500
-Wire Wire Line
-	7900 1400 8100 1400
-Wire Wire Line
-	7900 1300 8100 1300
-Wire Wire Line
-	7900 1200 8100 1200
-Wire Wire Line
-	7900 1100 8100 1100
 Wire Wire Line
 	1720 6315 1720 3050
 Wire Wire Line
@@ -664,7 +603,7 @@ L Switch:SW_Push SW4
 U 1 1 60C66D20
 P 2700 5650
 F 0 "SW4" H 2700 5935 50  0000 C CNN
-F 1 "SW_Push" H 2700 5844 50  0000 C CNN
+F 1 "SEL" H 2700 5844 50  0000 C CNN
 F 2 "sboxnet:JTP-1130" H 2700 5850 50  0001 C CNN
 F 3 "~" H 2700 5850 50  0001 C CNN
 	1    2700 5650
@@ -675,7 +614,7 @@ L Switch:SW_Push SW3
 U 1 1 60C6766C
 P 2700 5300
 F 0 "SW3" H 2700 5585 50  0000 C CNN
-F 1 "SW_Push" H 2700 5494 50  0000 C CNN
+F 1 "ACT" H 2700 5494 50  0000 C CNN
 F 2 "sboxnet:JTP-1130" H 2700 5500 50  0001 C CNN
 F 3 "~" H 2700 5500 50  0001 C CNN
 	1    2700 5300
@@ -686,7 +625,7 @@ L Switch:SW_Push SW2
 U 1 1 60C67C03
 P 2700 4900
 F 0 "SW2" H 2700 5185 50  0000 C CNN
-F 1 "SW_Push" H 2700 5094 50  0000 C CNN
+F 1 "DOWN" H 2700 5094 50  0000 C CNN
 F 2 "sboxnet:JTP-1130" H 2700 5100 50  0001 C CNN
 F 3 "~" H 2700 5100 50  0001 C CNN
 	1    2700 4900
@@ -697,7 +636,7 @@ L Switch:SW_Push SW1
 U 1 1 60C68B6C
 P 2700 4500
 F 0 "SW1" H 2700 4785 50  0000 C CNN
-F 1 "SW_Push" H 2700 4694 50  0000 C CNN
+F 1 "UP" H 2700 4694 50  0000 C CNN
 F 2 "sboxnet:JTP-1130" H 2700 4700 50  0001 C CNN
 F 3 "~" H 2700 4700 50  0001 C CNN
 	1    2700 4500
@@ -876,17 +815,6 @@ F 3 "" H 7070 4620 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Connector:Screw_Terminal_01x04 J2
-U 1 1 60B1A8A6
-P 8300 1200
-F 0 "J2" H 8380 1192 50  0000 L CNN
-F 1 "Screw_Terminal_01x04" H 8380 1101 50  0000 L CNN
-F 2 "TerminalBlock_Altech:Altech_AK300_1x04_P5.00mm_45-Degree" H 8300 1200 50  0001 C CNN
-F 3 "~" H 8300 1200 50  0001 C CNN
-	1    8300 1200
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:Screw_Terminal_01x04 J4
 U 1 1 60B1B9D6
 P 8300 1600
@@ -1042,23 +970,16 @@ F 3 "http://www.ti.com/lit/ds/symlink/ua78.pdf" H 2950 3000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	2200 3050 2650 3050
-NoConn ~ 5600 2080
-NoConn ~ 5500 2080
-NoConn ~ 5400 2080
-NoConn ~ 5300 2080
-NoConn ~ 5200 2080
-NoConn ~ 5100 2080
-NoConn ~ 5000 2080
 $Comp
 L sboxnet:R_Network15 RN1
 U 1 1 60C918A2
-P 4800 1880
-F 0 "RN1" H 4100 1926 50  0000 R CNN
-F 1 "4816P-T02-471LF 15x470" H 4100 1835 50  0000 R CNN
-F 2 "Package_SO:SOIC-16W_5.3x10.2mm_P1.27mm" H 4800 1880 50  0001 C CNN
-F 3 "" H 4800 1880 50  0001 C CNN
-	1    4800 1880
-	1    0    0    -1  
+P 4800 1800
+F 0 "RN1" H 4100 1846 50  0000 R CNN
+F 1 "4816P-T02-471LF 15x470" H 4100 1755 50  0000 R CNN
+F 2 "Package_SO:SOIC-16W_5.3x10.2mm_P1.27mm" H 4800 1800 50  0001 C CNN
+F 3 "" H 4800 1800 50  0001 C CNN
+	1    4800 1800
+	-1   0    0    1   
 $EndComp
 $Comp
 L sboxnet:R_Network13 RN2
@@ -1066,26 +987,26 @@ U 1 1 60C967AE
 P 7000 3450
 F 0 "RN2" V 6183 3450 50  0000 C CNN
 F 1 "4816P-2-103 13x 10k" V 6274 3450 50  0000 C CNN
-F 2 "Package_SO:SOIC-14W_7.5x9mm_P1.27mm" V 7775 3450 50  0001 C CNN
+F 2 "sboxnet:soic-14-8-6" V 7775 3450 50  0001 C CNN
 F 3 "http://www.vishay.com/docs/31509/csc.pdf" H 7000 3450 50  0001 C CNN
 	1    7000 3450
 	0    1    1    0   
 $EndComp
-Text GLabel 4900 2600 3    50   Input ~ 0
+Text GLabel 4200 800  1    50   Input ~ 0
 PD0
-Text GLabel 4800 2600 3    50   Input ~ 0
+Text GLabel 4300 800  1    50   Input ~ 0
 PD1
-Text GLabel 4700 2600 3    50   Input ~ 0
+Text GLabel 4400 800  1    50   Input ~ 0
 PD2
-Text GLabel 4600 2600 3    50   Input ~ 0
+Text GLabel 4500 800  1    50   Input ~ 0
 PD3
-Text GLabel 4500 2600 3    50   Input ~ 0
+Text GLabel 4600 800  1    50   Input ~ 0
 PD4
-Text GLabel 4400 2600 3    50   Input ~ 0
+Text GLabel 4700 800  1    50   Input ~ 0
 PD5
-Text GLabel 4300 2600 3    50   Input ~ 0
+Text GLabel 4800 800  1    50   Input ~ 0
 PD6
-Text GLabel 4200 2600 3    50   Input ~ 0
+Text GLabel 4900 800  1    50   Input ~ 0
 PD7
 $Sheet
 S 3270 6760 500  320 
@@ -1113,17 +1034,6 @@ Text GLabel 1800 6800 0    50   Input ~ 0
 PA1
 Text GLabel 1800 6900 0    50   Input ~ 0
 PA2
-$Comp
-L Connector_Generic:Conn_02x08_Top_Bottom J13
-U 1 1 612D070E
-P 2000 6900
-F 0 "J13" H 2050 7417 50  0000 C CNN
-F 1 "Conn_02x08_Top_Bottom" H 2050 7326 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x10_P2.54mm_Vertical" H 2000 6900 50  0001 C CNN
-F 3 "~" H 2000 6900 50  0001 C CNN
-	1    2000 6900
-	1    0    0    -1  
-$EndComp
 Wire Bus Line
 	3100 7700 3100 6860
 Wire Bus Line
@@ -1132,21 +1042,21 @@ Wire Bus Line
 	2800 7700 3100 7700
 Text Label 2800 7220 0    50   ~ 0
 CTRL_[1..16]
-Text GLabel 2300 7300 2    50   Input ~ 0
-PD0
-Text GLabel 2300 7200 2    50   Input ~ 0
-PD1
-Text GLabel 2300 7100 2    50   Input ~ 0
-PD2
-Text GLabel 2300 7000 2    50   Input ~ 0
-PD3
-Text GLabel 2300 6900 2    50   Input ~ 0
-PD4
-Text GLabel 2300 6800 2    50   Input ~ 0
-PD5
-Text GLabel 2300 6700 2    50   Input ~ 0
-PD6
 Text GLabel 2300 6600 2    50   Input ~ 0
+PD0
+Text GLabel 2300 6700 2    50   Input ~ 0
+PD1
+Text GLabel 2300 6800 2    50   Input ~ 0
+PD2
+Text GLabel 2300 6900 2    50   Input ~ 0
+PD3
+Text GLabel 2300 7000 2    50   Input ~ 0
+PD4
+Text GLabel 2300 7100 2    50   Input ~ 0
+PD5
+Text GLabel 2300 7200 2    50   Input ~ 0
+PD6
+Text GLabel 2300 7300 2    50   Input ~ 0
 PD7
 Entry Wire Line
 	2700 6600 2800 6700
@@ -1309,6 +1219,144 @@ NoConn ~ 1500 6700
 NoConn ~ 1500 6800
 NoConn ~ 1500 6900
 NoConn ~ 1500 7000
+Wire Wire Line
+	4900 1200 4900 1300
+Wire Wire Line
+	4200 1200 4200 1300
+Wire Wire Line
+	4300 1200 4300 1300
+Wire Wire Line
+	4400 1200 4400 1300
+Wire Wire Line
+	4500 1200 4500 1300
+Wire Wire Line
+	4600 1200 4600 1300
+Wire Wire Line
+	4700 1200 4700 1300
+Text Label 4900 1290 1    50   ~ 0
+L0
+Text Label 4300 1290 1    50   ~ 0
+L6
+Text Label 4400 1295 1    50   ~ 0
+L5
+Text Label 4500 1295 1    50   ~ 0
+L4
+Text Label 4600 1295 1    50   ~ 0
+L3
+Text Label 4700 1295 1    50   ~ 0
+L2
+Wire Wire Line
+	4000 1500 4000 1600
+Text Label 4000 1590 1    50   ~ 0
+L0
+Text Label 4800 1295 1    50   ~ 0
+L1
+Wire Wire Line
+	4800 1200 4800 1300
+Text Label 4100 1595 1    50   ~ 0
+L1
+Wire Wire Line
+	4100 1500 4100 1600
+$Comp
+L power:GND #PWR0104
+U 1 1 6127044D
+P 5400 2000
+F 0 "#PWR0104" H 5400 1750 50  0001 C CNN
+F 1 "GND" H 5405 1827 50  0000 C CNN
+F 2 "" H 5400 2000 50  0001 C CNN
+F 3 "" H 5400 2000 50  0001 C CNN
+	1    5400 2000
+	1    0    0    -1  
+$EndComp
+Text Label 4200 1585 1    50   ~ 0
+L2
+Text Label 4200 1295 1    50   ~ 0
+L7
+$Comp
+L LED:HDSP-4830_2 BAR1
+U 1 1 5D746743
+P 4500 1000
+F 0 "BAR1" V 4546 370 50  0000 R CNN
+F 1 "HDSP-4830_2 10x LED" V 4455 370 50  0000 R CNN
+F 2 "Display:HDSP-4830" H 4500 200 50  0001 C CNN
+F 3 "https://docs.broadcom.com/docs/AV02-1798EN" H 2500 1200 50  0001 C CNN
+	1    4500 1000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4200 1600 4200 1500
+Wire Wire Line
+	4300 1600 4300 1500
+Text Label 4300 1585 1    50   ~ 0
+L3
+Wire Wire Line
+	4400 1600 4400 1500
+Text Label 4400 1585 1    50   ~ 0
+L4
+Wire Wire Line
+	4500 1600 4500 1500
+Text Label 4500 1585 1    50   ~ 0
+L5
+Wire Wire Line
+	4600 1600 4600 1500
+Text Label 4600 1585 1    50   ~ 0
+L6
+Wire Wire Line
+	4700 1600 4700 1500
+Text Label 4700 1585 1    50   ~ 0
+L7
+NoConn ~ 4100 1200
+NoConn ~ 4000 1200
+NoConn ~ 4000 800 
+NoConn ~ 4100 800 
+NoConn ~ 4800 1600
+NoConn ~ 4900 1600
+NoConn ~ 5000 1600
+NoConn ~ 5100 1600
+NoConn ~ 5200 1600
+NoConn ~ 5300 1600
+NoConn ~ 5400 1600
+$Comp
+L Connector:Screw_Terminal_01x04 J2
+U 1 1 60B1A8A6
+P 8300 1200
+F 0 "J2" H 8380 1192 50  0000 L CNN
+F 1 "Screw_Terminal_01x04" H 8380 1101 50  0000 L CNN
+F 2 "TerminalBlock_Altech:Altech_AK300_1x04_P5.00mm_45-Degree" H 8300 1200 50  0001 C CNN
+F 3 "~" H 8300 1200 50  0001 C CNN
+	1    8300 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L 74xx_IEEE:74151 U3
+U 1 1 5D6CF1DE
+P 7350 1700
+F 0 "U3" H 7340 740 50  0000 C CNN
+F 1 "74HCT151" H 7350 900 50  0000 C CNN
+F 2 "Package_SO:SOIC-16_4.55x10.3mm_P1.27mm" H 7350 1700 50  0001 C CNN
+F 3 "" H 7350 1700 50  0001 C CNN
+	1    7350 1700
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	7900 1400 8100 1400
+Wire Wire Line
+	7900 1300 8100 1300
+Wire Wire Line
+	7900 1200 8100 1200
+Wire Wire Line
+	7900 1100 8100 1100
+$Comp
+L Connector_Generic:Conn_02x08_Top_Bottom J13
+U 1 1 61199855
+P 2000 6900
+F 0 "J13" H 2050 7417 50  0000 C CNN
+F 1 "Conn_02x08_Top_Bottom" H 2050 7326 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Vertical" H 2000 6900 50  0001 C CNN
+F 3 "~" H 2000 6900 50  0001 C CNN
+	1    2000 6900
+	1    0    0    -1  
+$EndComp
 Wire Bus Line
 	1100 6700 1100 7700
 Wire Bus Line

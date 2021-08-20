@@ -19,8 +19,6 @@ Text HLabel 2100 1500 0    50   Input ~ 0
 CTRL_[1..16]
 Wire Bus Line
 	2100 1500 2200 1500
-Wire Bus Line
-	2200 1500 2200 3200
 $Comp
 L LED:HDSP-4830_2 BAR?
 U 1 1 6128C33F
@@ -41,7 +39,7 @@ P 3600 1600
 AR Path="/6128C339" Ref="RN?"  Part="1" 
 AR Path="/61281C62/6128C339" Ref="RN4"  Part="1" 
 F 0 "RN4" H 2900 1646 50  0000 R CNN
-F 1 "4816P-T02-471LF 15x470" H 2900 1555 50  0000 R CNN
+F 1 "4816P-T02-471LF 15x470" H 3210 1845 50  0000 R CNN
 F 2 "Package_SO:SOIC-16W_5.3x10.2mm_P1.27mm" H 3600 1600 50  0001 C CNN
 F 3 "" H 3600 1600 50  0001 C CNN
 	1    3600 1600
@@ -250,6 +248,103 @@ Text Notes 3600 2660 1    50   ~ 0
 PD1
 Text Notes 3700 2660 1    50   ~ 0
 PD0
+$Comp
+L Connector_Generic:Conn_01x16 J14
+U 1 1 611BEE4E
+P 1700 2600
+F 0 "J14" H 1618 1575 50  0000 C CNN
+F 1 "Conn_01x16" H 1618 1666 50  0000 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x16_P2.54mm_Vertical" H 1700 2600 50  0001 C CNN
+F 3 "~" H 1700 2600 50  0001 C CNN
+	1    1700 2600
+	-1   0    0    1   
+$EndComp
+Connection ~ 2200 3200
+Entry Wire Line
+	2100 3300 2200 3400
+Text Label 1905 3300 0    50   ~ 0
+CTRL_1
+Wire Wire Line
+	1900 3300 2100 3300
+Wire Wire Line
+	1900 3200 2100 3200
+Wire Wire Line
+	1900 3100 2100 3100
+Wire Wire Line
+	1900 3000 2100 3000
+Wire Wire Line
+	1900 2900 2100 2900
+Text Label 1905 3200 0    50   ~ 0
+CTRL_2
+Text Label 1905 3100 0    50   ~ 0
+CTRL_3
+Text Label 1905 3000 0    50   ~ 0
+CTRL_4
+Text Label 1905 2900 0    50   ~ 0
+CTRL_5
+Entry Wire Line
+	2100 3200 2200 3300
+Entry Wire Line
+	2100 3100 2200 3200
+Entry Wire Line
+	2100 3000 2200 3100
+Entry Wire Line
+	2100 2900 2200 3000
+NoConn ~ 1900 2800
+NoConn ~ 1900 2700
+NoConn ~ 1900 2600
+Wire Wire Line
+	1900 2500 2100 2500
+Wire Wire Line
+	1900 2400 2100 2400
+Wire Wire Line
+	1900 2300 2100 2300
+Wire Wire Line
+	1900 2200 2100 2200
+Wire Wire Line
+	1900 2100 2100 2100
+Wire Wire Line
+	1900 2000 2100 2000
+Wire Wire Line
+	1900 1900 2100 1900
+Wire Wire Line
+	1900 1800 2100 1800
+Entry Wire Line
+	2100 1800 2200 1900
+Entry Wire Line
+	2100 1900 2200 2000
+Entry Wire Line
+	2100 2000 2200 2100
+Entry Wire Line
+	2100 2100 2200 2200
+Entry Wire Line
+	2100 2200 2200 2300
+Entry Wire Line
+	2100 2300 2200 2400
+Entry Wire Line
+	2100 2400 2200 2500
+Entry Wire Line
+	2100 2500 2200 2600
+Text Label 1905 1800 0    50   ~ 0
+CTRL_9
+Text Label 1905 1900 0    50   ~ 0
+CTRL_10
+Text Label 1900 2000 0    50   ~ 0
+CTRL_11
+Text Label 1905 2100 0    50   ~ 0
+CTRL_12
+Text Label 1905 2200 0    50   ~ 0
+CTRL_13
+Text Label 1910 2300 0    50   ~ 0
+CTRL_14
+Text Label 1905 2400 0    50   ~ 0
+CTRL_15
+Text Label 1910 2500 0    50   ~ 0
+CTRL_16
+Wire Bus Line
+	2200 3200 2200 3395
+Wire Bus Line
+	2200 1500 2200 3200
 Wire Bus Line
 	2200 3200 4800 3200
 $EndSCHEMATC
