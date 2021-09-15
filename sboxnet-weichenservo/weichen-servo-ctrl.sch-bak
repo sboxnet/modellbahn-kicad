@@ -309,12 +309,6 @@ Wire Wire Line
 	1900 1900 2100 1900
 Wire Wire Line
 	1900 1800 2100 1800
-Wire Bus Line
-	2200 3200 2200 3395
-Wire Bus Line
-	2200 1500 2200 3200
-Wire Bus Line
-	2200 3200 4800 3200
 Entry Wire Line
 	2100 1800 2200 1900
 Entry Wire Line
@@ -347,4 +341,10 @@ Text Label 1905 2400 0    50   ~ 0
 CTRL_15
 Text Label 1910 2500 0    50   ~ 0
 CTRL_16
+Wire Bus Line
+	2200 3200 2200 3395
+Wire Bus Line
+	2200 1500 2200 3200
+Wire Bus Line
+	2200 3200 4800 3200
 $EndSCHEMATC

@@ -925,7 +925,7 @@ U 1 1 60C0D972
 P 6650 2050
 F 0 "D3" H 6650 1833 50  0000 C CNN
 F 1 "BAT 54J NXP" H 6550 1915 50  0000 C CNN
-F 2 "Diode_SMD:D_SOD-323_HandSoldering" H 6650 2050 50  0001 C CNN
+F 2 "Diode_SMD:D_SOD-323F" H 6650 2050 50  0001 C CNN
 F 3 "~" H 6650 2050 50  0001 C CNN
 	1    6650 2050
 	-1   0    0    1   
@@ -957,6 +957,17 @@ $EndComp
 Wire Wire Line
 	6200 2050 6500 2050
 Connection ~ 6500 2050
+$Comp
+L Regulator_Linear:uA7805 U1
+U 1 1 60BBDD07
+P 2950 3050
+F 0 "U1" H 2950 3292 50  0000 C CNN
+F 1 "uA7805 D2PAK" H 2950 3201 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:ATPAK-2" H 2975 2900 50  0001 L CIN
+F 3 "http://www.ti.com/lit/ds/symlink/ua78.pdf" H 2950 3000 50  0001 C CNN
+	1    2950 3050
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
 	2200 3050 2650 3050
 $Comp
@@ -1350,15 +1361,4 @@ Wire Bus Line
 	1100 6700 1100 7700
 Wire Bus Line
 	2800 6600 2800 7700
-$Comp
-L Regulator_Linear:L7805 U1
-U 1 1 6141E933
-P 2950 3050
-F 0 "U1" H 2950 3292 50  0000 C CNN
-F 1 "L7805 CV 1.5A" H 2950 3201 50  0000 C CNN
-F 2 "" H 2975 2900 50  0001 L CIN
-F 3 "http://www.st.com/content/ccc/resource/technical/document/datasheet/41/4f/b3/b0/12/d4/47/88/CD00000444.pdf/files/CD00000444.pdf/jcr:content/translations/en.CD00000444.pdf" H 2950 3000 50  0001 C CNN
-	1    2950 3050
-	1    0    0    -1  
-$EndComp
 $EndSCHEMATC
