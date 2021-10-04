@@ -184,7 +184,7 @@
   (module sboxnet:sboxnet-stecker-2x17 (layer F.Cu) (tedit 5D9A08CB) (tstamp 5DBBD12D)
     (at 31.75 96.52 180)
     (path /5DCF4AB8)
-    (fp_text reference J1 (at 2.286 -0.254) (layer F.SilkS)
+    (fp_text reference J1 (at -2.39 2.46) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value sboxnet-stecker_02x17 (at 0.254 -2.286) (layer F.Fab)
