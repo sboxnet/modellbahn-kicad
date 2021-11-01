@@ -83,10 +83,6 @@ F 3 "" H 5035 4965 50  0001 C CNN
 	1    5035 4965
 	1    0    0    -1  
 $EndComp
-Text GLabel 5435 4565 2    50   Input ~ 0
-DCC_B
-Text GLabel 5435 4665 2    50   Input ~ 0
-DCC_A
 Text GLabel 3700 2990 2    50   Input ~ 0
 DCC_A
 Wire Wire Line
@@ -128,33 +124,11 @@ F 3 "" H 4335 4765 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L Device:R R4
-U 1 1 5DD0451E
-P 5695 2815
-F 0 "R4" H 5625 2769 50  0000 R CNN
-F 1 "680" H 5625 2860 50  0000 R CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 5625 2815 50  0001 C CNN
-F 3 "~" H 5695 2815 50  0001 C CNN
-	1    5695 2815
-	-1   0    0    1   
-$EndComp
-$Comp
-L Device:R R5
-U 1 1 5DD04D7F
-P 6215 2825
-F 0 "R5" H 6145 2779 50  0000 R CNN
-F 1 "680" H 6145 2870 50  0000 R CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 6145 2825 50  0001 C CNN
-F 3 "~" H 6215 2825 50  0001 C CNN
-	1    6215 2825
-	-1   0    0    1   
-$EndComp
-$Comp
 L Device:LED D1
 U 1 1 5DD0529F
 P 5695 3115
 F 0 "D1" V 5734 2998 50  0000 R CNN
-F 1 "LED" V 5643 2998 50  0000 R CNN
+F 1 "gn" V 5643 2998 50  0000 R CNN
 F 2 "LED_THT:LED_D3.0mm" H 5695 3115 50  0001 C CNN
 F 3 "~" H 5695 3115 50  0001 C CNN
 	1    5695 3115
@@ -165,16 +139,12 @@ L Device:LED D2
 U 1 1 5DD061F3
 P 6215 3125
 F 0 "D2" V 6254 3008 50  0000 R CNN
-F 1 "LED" V 6163 3008 50  0000 R CNN
+F 1 "rt" V 6163 3008 50  0000 R CNN
 F 2 "LED_THT:LED_D3.0mm" H 6215 3125 50  0001 C CNN
 F 3 "~" H 6215 3125 50  0001 C CNN
 	1    6215 3125
 	0    -1   -1   0   
 $EndComp
-Text Notes 6335 3290 0    50   ~ 0
-rt
-Text Notes 5830 3265 0    50   ~ 0
-gn
 Text Notes 6340 3380 0    50   ~ 0
 NOTAUS
 Wire Wire Line
@@ -218,7 +188,7 @@ L Device:R R3
 U 1 1 5DD0AE9B
 P 4845 2815
 F 0 "R3" H 4775 2769 50  0000 R CNN
-F 1 "2,2k" H 4775 2860 50  0000 R CNN
+F 1 "1k" H 4775 2860 50  0000 R CNN
 F 2 "Resistor_SMD:R_1206_3216Metric" V 4775 2815 50  0001 C CNN
 F 3 "~" H 4845 2815 50  0001 C CNN
 	1    4845 2815
@@ -292,52 +262,6 @@ F 3 "~" H 5075 3160 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R7
-U 1 1 5F088297
-P 6405 4195
-F 0 "R7" V 6612 4195 50  0000 C CNN
-F 1 "120" V 6525 4090 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 6335 4195 50  0001 C CNN
-F 3 "~" H 6405 4195 50  0001 C CNN
-	1    6405 4195
-	0    -1   -1   0   
-$EndComp
-$Comp
-L Device:R R6
-U 1 1 5F088916
-P 6400 4535
-F 0 "R6" V 6607 4535 50  0000 C CNN
-F 1 "120" V 6520 4415 50  0000 C CNN
-F 2 "Resistor_SMD:R_1206_3216Metric" V 6330 4535 50  0001 C CNN
-F 3 "~" H 6400 4535 50  0001 C CNN
-	1    6400 4535
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:+3.3V #PWR0108
-U 1 1 5F08976A
-P 6595 4080
-F 0 "#PWR0108" H 6595 3930 50  0001 C CNN
-F 1 "+3.3V" H 6610 4253 50  0000 C CNN
-F 2 "" H 6595 4080 50  0001 C CNN
-F 3 "" H 6595 4080 50  0001 C CNN
-	1    6595 4080
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	6595 4080 6595 4195
-Wire Wire Line
-	6595 4195 6555 4195
-Wire Wire Line
-	6595 4195 6595 4535
-Wire Wire Line
-	6595 4535 6550 4535
-Connection ~ 6595 4195
-Text GLabel 6195 4195 0    50   Input ~ 0
-DCC_B
-Text GLabel 6195 4535 0    50   Input ~ 0
-DCC_A
-$Comp
 L Connector:TestPoint TP1
 U 1 1 5F11E6CB
 P 4600 4260
@@ -354,35 +278,308 @@ Connection ~ 4600 4465
 Wire Wire Line
 	4600 4465 4635 4465
 $Comp
-L Connector:TestPoint TP2
-U 1 1 5F12488F
-P 6225 4195
-F 0 "TP2" H 6283 4313 50  0000 L CNN
-F 1 "TestPoint" H 5985 4425 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6425 4195 50  0001 C CNN
-F 3 "~" H 6425 4195 50  0001 C CNN
-	1    6225 4195
+L Connector:8P8C J4
+U 1 1 616ED943
+P 1600 6400
+F 0 "J4" H 1657 7067 50  0000 C CNN
+F 1 "8P8C" H 1657 6976 50  0000 C CNN
+F 2 "sboxnet:8p8c-mebp" V 1600 6425 50  0001 C CNN
+F 3 "~" V 1600 6425 50  0001 C CNN
+	1    1600 6400
 	1    0    0    -1  
 $EndComp
+$Comp
+L Connector:8P8C J5
+U 1 1 616EF5D6
+P 3100 6400
+F 0 "J5" H 3157 7067 50  0000 C CNN
+F 1 "8P8C" H 3157 6976 50  0000 C CNN
+F 2 "sboxnet:8p8c-mebp" V 3100 6425 50  0001 C CNN
+F 3 "~" V 3100 6425 50  0001 C CNN
+	1    3100 6400
+	1    0    0    -1  
+$EndComp
+Text GLabel 2000 6000 2    50   Input ~ 0
+dcc_b_x
+Text GLabel 2000 6100 2    50   Input ~ 0
+dcc_a_x
+Text GLabel 2000 6200 2    50   Input ~ 0
+gnd_x
+Text GLabel 2000 6300 2    50   Input ~ 0
+can_h_x
+Text GLabel 2000 6400 2    50   Input ~ 0
+can_l_x
+Text GLabel 2000 6500 2    50   Input ~ 0
++7_x
+Text GLabel 2000 6600 2    50   Input ~ 0
++7_x
+Text GLabel 2000 6700 2    50   Input ~ 0
+gnd_x
+Text GLabel 3500 6000 2    50   Input ~ 0
+dcc_b_x
+Text GLabel 3500 6100 2    50   Input ~ 0
+dcc_a_x
+Text GLabel 3500 6200 2    50   Input ~ 0
+gnd_x
+Text GLabel 3500 6300 2    50   Input ~ 0
+can_h_x
+Text GLabel 3500 6400 2    50   Input ~ 0
+can_l_x
+Text GLabel 3500 6500 2    50   Input ~ 0
++7_x
+Text GLabel 3500 6600 2    50   Input ~ 0
++7_x
+Text GLabel 3500 6700 2    50   Input ~ 0
+gnd_x
+$Comp
+L Connector:8P8C J6
+U 1 1 61709163
+P 4605 6400
+F 0 "J6" H 4662 7067 50  0000 C CNN
+F 1 "8P8C" H 4662 6976 50  0000 C CNN
+F 2 "sboxnet:8p8c-mebp" V 4605 6425 50  0001 C CNN
+F 3 "~" V 4605 6425 50  0001 C CNN
+	1    4605 6400
+	1    0    0    -1  
+$EndComp
+Text GLabel 5005 6000 2    50   Input ~ 0
+dcc_b_x
+Text GLabel 5005 6100 2    50   Input ~ 0
+dcc_a_x
+Text GLabel 5005 6200 2    50   Input ~ 0
+gnd_x
+Text GLabel 5005 6300 2    50   Input ~ 0
+can_h_x
+Text GLabel 5005 6400 2    50   Input ~ 0
+can_l_x
+Text GLabel 5005 6500 2    50   Input ~ 0
++7_x
+Text GLabel 5005 6600 2    50   Input ~ 0
++7_x
+Text GLabel 5005 6700 2    50   Input ~ 0
+gnd_x
+$Comp
+L Connector:8P8C J8
+U 1 1 6170E708
+P 6100 6400
+F 0 "J8" H 6157 7067 50  0000 C CNN
+F 1 "8P8C" H 6157 6976 50  0000 C CNN
+F 2 "sboxnet:8p8c-mebp" V 6100 6425 50  0001 C CNN
+F 3 "~" V 6100 6425 50  0001 C CNN
+	1    6100 6400
+	1    0    0    -1  
+$EndComp
+Text GLabel 6500 6000 2    50   Input ~ 0
+dcc_b_x
+Text GLabel 6500 6100 2    50   Input ~ 0
+dcc_a_x
+Text GLabel 6500 6200 2    50   Input ~ 0
+gnd_x
+Text GLabel 6500 6300 2    50   Input ~ 0
+can_h_x
+Text GLabel 6500 6400 2    50   Input ~ 0
+can_l_x
+Text GLabel 6500 6500 2    50   Input ~ 0
++7_x
+Text GLabel 6500 6600 2    50   Input ~ 0
++7_x
+Text GLabel 6500 6700 2    50   Input ~ 0
+gnd_x
+$Comp
+L Connector_Generic:Conn_01x02 J7
+U 1 1 61715288
+P 5665 5415
+F 0 "J7" H 5745 5407 50  0000 L CNN
+F 1 "Conn_01x02" H 5745 5316 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 5665 5415 50  0001 C CNN
+F 3 "~" H 5665 5415 50  0001 C CNN
+	1    5665 5415
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R6
+U 1 1 61715293
+P 5465 5265
+F 0 "R6" V 5258 5265 50  0000 C CNN
+F 1 "120" V 5349 5265 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5395 5265 50  0001 C CNN
+F 3 "~" H 5465 5265 50  0001 C CNN
+	1    5465 5265
+	-1   0    0    1   
+$EndComp
+Text GLabel 5465 5515 0    50   Input ~ 0
+can_h_x
+Text GLabel 5465 5115 1    50   Input ~ 0
+can_l_x
+Text GLabel 5435 4665 2    50   Input ~ 0
+DCC_A
+Text GLabel 5435 4565 2    50   Input ~ 0
+DCC_B
+$Comp
+L Device:R R8
+U 1 1 616EC28B
+P 3650 5250
+F 0 "R8" V 3443 5250 50  0000 C CNN
+F 1 "120" V 3534 5250 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 3580 5250 50  0001 C CNN
+F 3 "~" H 3650 5250 50  0001 C CNN
+	1    3650 5250
+	-1   0    0    1   
+$EndComp
+Text GLabel 3650 5500 0    50   Input ~ 0
+DCC_B
+$Comp
+L Connector_Generic:Conn_01x02 J3
+U 1 1 616EB2D6
+P 3850 5400
+F 0 "J3" H 3930 5392 50  0000 L CNN
+F 1 "Conn_01x02" H 3930 5301 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 3850 5400 50  0001 C CNN
+F 3 "~" H 3850 5400 50  0001 C CNN
+	1    3850 5400
+	1    0    0    -1  
+$EndComp
+Text GLabel 3650 5100 1    50   Input ~ 0
+DCC_A
+$Comp
+L Device:R R5
+U 1 1 5DD04D7F
+P 6215 2825
+F 0 "R5" H 6145 2779 50  0000 R CNN
+F 1 "470" H 6145 2870 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 6145 2825 50  0001 C CNN
+F 3 "~" H 6215 2825 50  0001 C CNN
+	1    6215 2825
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 5DD0451E
+P 5695 2815
+F 0 "R4" H 5625 2769 50  0000 R CNN
+F 1 "470" H 5625 2860 50  0000 R CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 5625 2815 50  0001 C CNN
+F 3 "~" H 5695 2815 50  0001 C CNN
+	1    5695 2815
+	-1   0    0    1   
+$EndComp
 Wire Wire Line
-	6195 4535 6235 4535
-Wire Wire Line
-	6195 4195 6225 4195
-Connection ~ 6225 4195
-Wire Wire Line
-	6225 4195 6255 4195
+	5835 3905 5865 3905
+$Comp
+L Connector:TestPoint TP2
+U 1 1 5F12488F
+P 5865 3905
+F 0 "TP2" H 5923 4023 50  0000 L CNN
+F 1 "TestPoint" H 5625 4135 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6065 3905 50  0001 C CNN
+F 3 "~" H 6065 3905 50  0001 C CNN
+	1    5865 3905
+	1    0    0    -1  
+$EndComp
+Text GLabel 5835 4245 0    50   Input ~ 0
+DCC_A
+Text GLabel 5835 3905 0    50   Input ~ 0
+DCC_B
 $Comp
 L Connector:TestPoint TP3
 U 1 1 5F127DD2
-P 6235 4535
-F 0 "TP3" H 6293 4653 50  0000 L CNN
-F 1 "TestPoint" H 5960 4745 50  0000 L CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6435 4535 50  0001 C CNN
-F 3 "~" H 6435 4535 50  0001 C CNN
-	1    6235 4535
+P 5875 4245
+F 0 "TP3" H 5933 4363 50  0000 L CNN
+F 1 "TestPoint" H 5600 4455 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical" H 6075 4245 50  0001 C CNN
+F 3 "~" H 6075 4245 50  0001 C CNN
+	1    5875 4245
 	1    0    0    -1  
 $EndComp
-Connection ~ 6235 4535
+$Comp
+L Device:R R7
+U 1 1 61723B4D
+P 4635 5385
+F 0 "R7" V 4428 5385 50  0000 C CNN
+F 1 "120" V 4519 5385 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 4565 5385 50  0001 C CNN
+F 3 "~" H 4635 5385 50  0001 C CNN
+	1    4635 5385
+	-1   0    0    1   
+$EndComp
+Text GLabel 4635 5635 0    50   Input ~ 0
+dcc_b_x
+$Comp
+L Connector_Generic:Conn_01x02 J9
+U 1 1 61723B58
+P 4835 5535
+F 0 "J9" H 4915 5527 50  0000 L CNN
+F 1 "Conn_01x02" H 4915 5436 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 4835 5535 50  0001 C CNN
+F 3 "~" H 4835 5535 50  0001 C CNN
+	1    4835 5535
+	1    0    0    -1  
+$EndComp
+Text GLabel 4635 5235 1    50   Input ~ 0
+dcc_a_x
+$Comp
+L Connector:8P8C J10
+U 1 1 61702C47
+P 7100 5250
+F 0 "J10" H 7157 5917 50  0000 C CNN
+F 1 "8P8C" H 7157 5826 50  0000 C CNN
+F 2 "sboxnet:8p8c-mebp" V 7100 5275 50  0001 C CNN
+F 3 "~" V 7100 5275 50  0001 C CNN
+	1    7100 5250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J11
+U 1 1 61706931
+P 8050 4850
+F 0 "J11" H 8130 4842 50  0000 L CNN
+F 1 "Conn_01x02" H 8130 4751 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8050 4850 50  0001 C CNN
+F 3 "~" H 8050 4850 50  0001 C CNN
+	1    8050 4850
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R10
+U 1 1 6170B042
+P 7700 5150
+F 0 "R10" V 7493 5150 50  0000 C CNN
+F 1 "120" V 7584 5150 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 7630 5150 50  0001 C CNN
+F 3 "~" H 7700 5150 50  0001 C CNN
+	1    7700 5150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x02 J12
+U 1 1 6170C32D
+P 8050 5150
+F 0 "J12" H 8130 5142 50  0000 L CNN
+F 1 "Conn_01x02" H 8130 5051 50  0000 L CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical" H 8050 5150 50  0001 C CNN
+F 3 "~" H 8050 5150 50  0001 C CNN
+	1    8050 5150
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	6235 4535 6250 4535
+	7500 5150 7550 5150
+Wire Wire Line
+	7500 5250 7850 5250
+$Comp
+L Device:R R9
+U 1 1 6170F9B0
+P 7700 4850
+F 0 "R9" V 7493 4850 50  0000 C CNN
+F 1 "120" V 7584 4850 50  0000 C CNN
+F 2 "Resistor_SMD:R_1206_3216Metric" V 7630 4850 50  0001 C CNN
+F 3 "~" H 7700 4850 50  0001 C CNN
+	1    7700 4850
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7500 4850 7550 4850
+Wire Wire Line
+	7500 4950 7850 4950
+Wire Wire Line
+	5835 4245 5875 4245
 $EndSCHEMATC
