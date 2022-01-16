@@ -1549,17 +1549,6 @@ Wire Wire Line
 Text Notes 2410 840  3    50   ~ 0
 ON
 $Comp
-L sboxnet:l6206 U4
-U 1 1 61AEA46D
-P 8200 3850
-F 0 "U4" H 8492 3941 39  0000 C CNN
-F 1 "l6206" H 8492 3866 39  0000 C CNN
-F 2 "" H 8200 3850 39  0001 C CNN
-F 3 "" H 8200 3850 39  0001 C CNN
-	1    8200 3850
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:C C12
 U 1 1 61AECA01
 P 7750 4000
@@ -1734,14 +1723,9 @@ Wire Wire Line
 Wire Wire Line
 	9295 5150 8800 5150
 Wire Wire Line
-	8795 4400 8800 4400
-Wire Wire Line
 	9230 4400 9230 5250
 Wire Wire Line
 	9230 5250 8800 5250
-Connection ~ 8800 4400
-Wire Wire Line
-	8800 4400 9230 4400
 $Comp
 L power:GND #PWR033
 U 1 1 61B40265
@@ -2037,4 +2021,17 @@ Text Notes 2750 1480 2    50   ~ 0
 gn
 Text Notes 1010 5285 0    39   ~ 0
 PB2..0 ModulCodierung\n
+$Comp
+L sboxnet:l6206 U4
+U 1 1 61AEA46D
+P 8200 3850
+F 0 "U4" H 8492 3941 39  0000 C CNN
+F 1 "l6206" H 8492 3866 39  0000 C CNN
+F 2 "" H 8200 3850 39  0001 C CNN
+F 3 "" H 8200 3850 39  0001 C CNN
+	1    8200 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8800 4400 9230 4400
 $EndSCHEMATC
