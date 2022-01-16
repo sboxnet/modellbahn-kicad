@@ -1611,17 +1611,6 @@ F 3 "~" H 7150 4300 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 Connection ~ 7300 4300
-$Comp
-L power:GND #PWR028
-U 1 1 61AFD8D0
-P 7000 4300
-F 0 "#PWR028" H 7000 4050 50  0001 C CNN
-F 1 "GND" H 7005 4127 50  0000 C CNN
-F 2 "" H 7000 4300 50  0001 C CNN
-F 3 "" H 7000 4300 50  0001 C CNN
-	1    7000 4300
-	0    1    1    0   
-$EndComp
 Text GLabel 7000 4000 0    50   Input ~ 0
 V
 Text GLabel 8800 4000 2    50   Input ~ 0
@@ -2034,4 +2023,6 @@ Wire Wire Line
 	9400 4400 9400 5150
 Wire Wire Line
 	9400 5150 8800 5150
+Text GLabel 7000 4300 0    50   Input ~ 0
+V
 $EndSCHEMATC

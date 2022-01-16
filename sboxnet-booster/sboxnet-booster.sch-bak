@@ -1716,16 +1716,6 @@ Text GLabel 8800 5050 2    50   Input ~ 0
 RC
 Text GLabel 8800 4200 2    50   Input ~ 0
 RC
-Wire Wire Line
-	8800 4300 9295 4300
-Wire Wire Line
-	9295 4300 9295 5150
-Wire Wire Line
-	9295 5150 8800 5150
-Wire Wire Line
-	9230 4400 9230 5250
-Wire Wire Line
-	9230 5250 8800 5250
 $Comp
 L power:GND #PWR033
 U 1 1 61B40265
@@ -2033,5 +2023,15 @@ F 3 "" H 8200 3850 39  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8800 4400 9230 4400
+	8800 4300 9450 4300
+Wire Wire Line
+	9450 4300 9450 5250
+Wire Wire Line
+	9450 5250 8800 5250
+Wire Wire Line
+	8800 4400 9400 4400
+Wire Wire Line
+	9400 4400 9400 5150
+Wire Wire Line
+	9400 5150 8800 5150
 $EndSCHEMATC
