@@ -3397,7 +3397,7 @@
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005f02019e)
     (property "Reference" "C5" (id 0) (at 80.1878 47.498 90))
-    (property "Value" "47n" (id 1) (at 77.851 47.244 90))
+    (property "Value" "100n" (id 1) (at 77.851 47.244 90))
     (property "Footprint" "Capacitor_SMD:C_1206_3216Metric" (id 2) (at 72.8218 43.688 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4774,7 +4774,7 @@
       (reference "C1") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_1206_3216Metric")
     )
     (path "/00000000-0000-0000-0000-00005f02019e"
-      (reference "C5") (unit 1) (value "47n") (footprint "Capacitor_SMD:C_1206_3216Metric")
+      (reference "C5") (unit 1) (value "100n") (footprint "Capacitor_SMD:C_1206_3216Metric")
     )
     (path "/00000000-0000-0000-0000-00005dbbe48c"
       (reference "C7") (unit 1) (value "2700u/25v") (footprint "Capacitor_THT:CP_Radial_D16.0mm_P7.50mm")
