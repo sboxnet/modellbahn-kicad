@@ -3970,7 +3970,7 @@
     (property "Value" "1N4148W" (id 1) (at 182.753 99.568 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering" (id 2) (at 181.61 97.155 0)
+    (property "Footprint" "Diode_SMD:D_SOD-123F" (id 2) (at 181.61 97.155 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.vishay.com/docs/85751/1n4148ws.pdf" (id 3) (at 181.61 101.6 0)
@@ -3989,7 +3989,7 @@
     (property "Value" "1N4148W" (id 1) (at 187.452 106.553 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Footprint" "Diode_SMD:D_SOD-323_HandSoldering" (id 2) (at 189.865 105.41 0)
+    (property "Footprint" "Diode_SMD:D_SOD-123F" (id 2) (at 189.865 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.vishay.com/docs/85751/1n4148ws.pdf" (id 3) (at 185.42 105.41 0)
@@ -4831,10 +4831,10 @@
       (reference "D13") (unit 1) (value "LED") (footprint "LED_THT:LED_D3.0mm")
     )
     (path "/00000000-0000-0000-0000-000061af0c41"
-      (reference "D14") (unit 1) (value "1N4148W") (footprint "Diode_SMD:D_SOD-323_HandSoldering")
+      (reference "D14") (unit 1) (value "1N4148W") (footprint "Diode_SMD:D_SOD-123F")
     )
     (path "/00000000-0000-0000-0000-000061af30c5"
-      (reference "D15") (unit 1) (value "1N4148W") (footprint "Diode_SMD:D_SOD-323_HandSoldering")
+      (reference "D15") (unit 1) (value "1N4148W") (footprint "Diode_SMD:D_SOD-123F")
     )
     (path "/00000000-0000-0000-0000-000061b7149f"
       (reference "J1") (unit 1) (value "sboxnet-stecker_02x17") (footprint "sboxnet:sboxnet-stecker-2x17")
