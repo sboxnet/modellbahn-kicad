@@ -3505,7 +3505,7 @@
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005f0e2174)
     (property "Reference" "D5" (id 0) (at 86.7664 80.2386 0))
-    (property "Value" "BAT 54S NXP" (id 1) (at 86.7664 82.55 0))
+    (property "Value" "BAT 54S" (id 1) (at 86.7664 82.55 0))
     (property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering" (id 2) (at 86.7664 91.821 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -3577,7 +3577,7 @@
     (property "Reference" "D6" (id 0) (at 93.9292 102.2604 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
-    (property "Value" "BAT 54S NXP" (id 1) (at 93.9292 104.5718 90)
+    (property "Value" "BAT 54S" (id 1) (at 93.9292 104.5718 90)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering" (id 2) (at 96.3422 103.4288 0)
@@ -3851,7 +3851,7 @@
     (in_bom yes) (on_board yes)
     (uuid 00000000-0000-0000-0000-00005f1b960f)
     (property "Reference" "D4" (id 0) (at 73.8632 91.567 0))
-    (property "Value" "BAT 54S NXP" (id 1) (at 73.8632 93.8784 0))
+    (property "Value" "BAT 54S" (id 1) (at 73.8632 93.8784 0))
     (property "Footprint" "Package_TO_SOT_SMD:SOT-23_Handsoldering" (id 2) (at 73.8632 92.6338 0)
       (effects (font (size 1.27 1.27)) hide)
     )
@@ -4884,13 +4884,13 @@
       (reference "D3") (unit 1) (value "LED") (footprint "LED_THT:LED_D3.0mm")
     )
     (path "/00000000-0000-0000-0000-00005f1b960f"
-      (reference "D4") (unit 1) (value "BAT 54S NXP") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
+      (reference "D4") (unit 1) (value "BAT 54S") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-00005f0e2174"
-      (reference "D5") (unit 1) (value "BAT 54S NXP") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
+      (reference "D5") (unit 1) (value "BAT 54S") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-00005f139ee6"
-      (reference "D6") (unit 1) (value "BAT 54S NXP") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
+      (reference "D6") (unit 1) (value "BAT 54S") (footprint "Package_TO_SOT_SMD:SOT-23_Handsoldering")
     )
     (path "/00000000-0000-0000-0000-00005dba95ff"
       (reference "D9") (unit 1) (value "LED") (footprint "LED_THT:LED_D3.0mm")
