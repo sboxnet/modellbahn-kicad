@@ -1,4 +1,4 @@
 (sym_lib_table
-  (lib (name sboxnet)(type Legacy)(uri /home/balagi/modellbahn-kicad/lib/sboxnet.lib)(options "")(descr ""))
-  (lib (name sboxnet2usb-rescue)(type Legacy)(uri ${KIPRJMOD}/sboxnet2usb-rescue.lib)(options "")(descr ""))
+  (lib (name "sboxnet")(type "KiCad")(uri "/home/balagi/modellbahn-kicad/lib/sboxnet.kicad_sym")(options "")(descr ""))
+  (lib (name "sboxnet2usb-rescue")(type "KiCad")(uri "${KIPRJMOD}/sboxnet2usb-rescue.kicad_sym")(options "")(descr ""))
 )
