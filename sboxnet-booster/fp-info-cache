@@ -1,4 +1,4 @@
-20406076639971014
+20407973904450689
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -86050,6 +86050,13 @@ JTP-1130
 0
 4
 2
+sboxnet
+QS4A_0303S1.5UP
+
+
+0
+4
+4
 sboxnet
 heatsink
 

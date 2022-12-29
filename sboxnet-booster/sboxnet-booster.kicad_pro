@@ -67,7 +67,6 @@
         "silk_over_copper|120334000|155218000|d1714ebe-1d61-47f2-a101-da1a1d8e0b96|398ee551-1379-423b-9612-d42f2e828383",
         "silk_over_copper|121119047|106720000|41fa224f-f9db-43fc-a09b-586f31e44611|0d1592aa-8958-4159-80a7-9e183467da68",
         "silk_over_copper|121880952|106672380|41fa224f-f9db-43fc-a09b-586f31e44611|0d1592aa-8958-4159-80a7-9e183467da68",
-        "silk_over_copper|124823809|89750000|5a213894-91f6-4836-ad7d-82a71b0f7d35|b949e13f-8330-4f78-b975-46afcad17e43",
         "silk_over_copper|125585714|85950000|9bc5af7c-740c-4ef4-b1b1-b28f034ed3e5|05ce425e-8f8d-4b8b-b10d-f8934b0fd9bc",
         "silk_over_copper|129766666|135509880|4bb28ee5-aef8-456d-afb7-86e980e4263b|a3907ba3-fcee-434a-8d0f-bbf810dac1a8",
         "silk_over_copper|129766666|138344880|9b2d151c-14ca-4df1-9332-7172e37141a3|65a8edba-cc93-45cc-9fcd-6ce5c3102613",
@@ -167,8 +166,11 @@
       },
       "track_widths": [
         0.0,
+        0.2,
         0.25,
+        0.7,
         1.0,
+        2.0,
         5.0
       ],
       "via_dimensions": [
